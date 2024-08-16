@@ -1,0 +1,616 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: #f8f8f8;
+    position: relative;
+    padding-top: 1px;
+}
+
+#nav {
+    height: 13vh;
+    width: 100%;
+    margin-top: 40px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav h1 {
+    height: 100%;
+    width: 24%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monument;
+    font-size: 40px;
+    letter-spacing: -1px;
+}
+
+#nav h1::after {
+    content: "©️";
+    font-family: monument;
+    font-weight: 400;
+    font-size: 1.5vw;
+}
+
+#nav h2 {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#nav h3 {
+    display: none;
+}
+
+#nav h2:nth-last-child(1) {
+    width: 10%;
+
+}
+
+#nav h2:nth-last-child(2) {
+    width: 26%;
+}
+
+#center {
+    height: 90%;
+    width: 100%;
+    position: relative;
+    padding: 3.5vw;
+}
+
+#content {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#content video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#overlay {
+    height: 55%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 3vw;
+    color: #f8f8f8;
+}
+
+#over1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5vw;
+}
+
+#over1 h1 {
+    font-family: monument;
+    font-size: 3vw;
+}
+
+#over1 h2 {
+    font-family: monument;
+    font-size: 1.5vw;
+    font-weight: 100;
+    padding: 2vw 2.5vw;
+    border-radius: 50%;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 3px solid white;
+}
+
+#over2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid white;
+}
+
+#over2 h4 {
+    font-size: 1vw;
+    font-family: monument;
+    font-weight: 500;
+
+}
+
+#over2 img {
+    font-size: 2vw;
+}
+
+#scroll {
+    height: 40vh;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    animation-name: infinite;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#scroll img {
+    height: 80%;
+    width: 14%;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 1.2vw;
+}
+
+@keyframes infinite {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#alphabet {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+#alphabet h5 {
+    font-size: 1.5vw;
+    font-weight: 500;
+    border-bottom: 2px solid black;
+    letter-spacing: 3px;
+    margin-right: 20px;
+}
+
+#alphabet h6 {
+    font-size: 1vw;
+    font-weight: 500;
+    font-style: italic;
+    padding: 0.6vw 0.8vw;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+#alphabet h6:hover {
+    border: 1px solid black;
+}
+
+#page2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5vw 3vw;
+}
+
+#part1 {
+    height: 100%;
+    width: 55%;
+    background-image: url(https://images.unsplash.com/photo-1583870798567-d352c662bc67?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+#part2 {
+    height: 100%;
+    width: 35%;
+}
+
+#part2 img {
+    height: 80%;
+    width: 90%;
+    object-fit: cover;
+}
+
+#text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#text1 h3 {
+    font-size: 1.3vw;
+    font-weight: 600;
+    font-family: Oswald;
+}
+
+#text2 h4 {
+    font-size: 1vw;
+    font-weight: 700;
+    font-style: italic;
+    font-family: Oswald;
+}
+
+#text1:nth-child(1) {
+    margin-top: 1vw;
+}
+
+#page3 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 5vw 4vw;
+}
+
+#page3>h1 {
+    text-align: center;
+    font-family: monument;
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-weight: 600;
+    margin-bottom: 7vh;
+}
+
+.elem {
+    height: 17vh;
+    width: 100%;
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    position: relative;
+}
+
+.elem:nth-last-child(1) {
+    border-bottom: 2px solid black;
+}
+
+.elem h4 {
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 10%;
+}
+
+.elem h6 {
+    position: absolute;
+    font-size: 2vw;
+    opacity: 0;
+    left: 10%;
+    transition: all ease 0.7s;
+
+}
+
+.elem:hover h6 {
+    opacity: 1;
+    left: 25%;
+}
+
+.elem .elem-part2 {
+    width: 35%;
+}
+
+.elem .elem-part2 h1 {
+    font-size: 3vw;
+    font-weight: 500;
+}
+
+.elem .elem-part2 h5 {
+    font-size: 1vw;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.elem img {
+    position: absolute;
+    height: 15vh;
+    width: 15vh;
+    border-radius: 50%;
+    left: 15%;
+    object-fit: cover;
+    opacity: 0;
+    transition: all ease 0.7s;
+}
+
+.elem:hover img {
+    opacity: 1;
+    left: 25%;
+}
+
+#marq {
+    /* height: 15vh; */
+    width: 100%;
+    white-space: nowrap;
+    overflow-Y: hidden;
+    overflow-X: hidden;
+    padding: 1vw 0;
+    margin-top: 4vw;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+#marq h1 {
+    display: inline-block;
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: bolder;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    font-family: monument;
+    margin-right: 2vw;
+    letter-spacing: 2px;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% - 2vw - 2px));
+    }
+}
+
+#footer {
+    height: 5%;
+    width: 100%;
+}
+
+@media (max-width:600px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #nav {
+        height: 8vh;
+        margin-top: 20px;
+        padding: 0 5vw;
+    }
+
+    #nav h1 {
+        width: 40%;
+        justify-content: flex-start;
+        font-size: 25px;
+    }
+
+    #nav h1::after {
+        display: none;
+    }
+
+    #nav h2 {
+        display: none;
+    }
+
+    #nav h3 {
+        display: block;
+    }
+
+    #center {
+        height: 40%;
+        width: 100%;
+        position: relative;
+        padding: 3.5vw;
+    }
+
+    #content {
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+
+    #content video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #overlay {
+        height: 40%;
+        bottom: 5%;
+    }
+
+    #over1 {
+        margin-bottom: 1.5vw;
+    }
+
+    #over1 h1 {
+        font-size: 5vw;
+        font-weight: 500;
+    }
+
+    #over2 h4 {
+        font-size: 3vw;
+        font-weight: 300;
+
+    }
+
+    #over2 img {
+        font-size: 1vh;
+    }
+
+    #scroll {
+        height: 20vh;
+        width: 100%;
+
+    }
+
+    #container {
+        height: 100%;
+        width: 200%;
+    }
+
+    #scroll img {
+        height: 70%;
+        width: 15%;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 1.2vw;
+    }
+
+    #alphabet {
+        display: none;
+    }
+
+    #page2 {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5vw 3vw;
+    }
+
+    #part1 {
+        height: 50%;
+        width: 100%;
+    }
+
+    #part2 {
+        margin-top: 2vh;
+        height: 50%;
+        width: 100%;
+    }
+
+    #part2 img {
+        height: 80%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #text1 h3 {
+        font-size: 4vw;
+        font-weight: 600;
+        font-family: Oswald;
+    }
+
+    #text2 h4 {
+        font-size: 3vw;
+        font-weight: 700;
+        font-style: italic;
+        font-family: Oswald;
+    }
+
+    #page3 {
+        padding: 4vw;
+        height: 80%;
+    }
+
+    #page3>h1 {
+        font-size: 6vw;
+        margin-bottom: 7vh;
+        margin-top: 10vh;
+    }
+
+    .elem {
+        height: 13vh;
+    }
+
+    .elem h4 {
+        font-size: 3vw;
+        text-transform: uppercase;
+        font-weight: 600;
+        width: 10%;
+    }
+
+    .elem .elem-part2 {
+        width: 50%;
+    }
+
+    .elem .elem-part2 h1 {
+        font-size: 5vw;
+        font-weight: 500;
+    }
+
+    .elem .elem-part2 h5 {
+        font-size: 2.5vw;
+        margin-top: 2vw;
+    }
+
+    .elem img {
+        position: absolute;
+        height: 7vh;
+        width: 7vh;
+        border-radius: 50%;
+        left: 15%;
+        object-fit: cover;
+        opacity: 0;
+        transition: all ease 0.7s;
+    }
+
+    .elem:hover img {
+        opacity: 1;
+        left: 25%;
+    }
+
+    #marq {
+        /* height: 15vh; */
+        width: 100%;
+        white-space: nowrap;
+        overflow-Y: hidden;
+        overflow-X: hidden;
+        padding: 1vw 0;
+        border-bottom: 2px solid black;
+        border-top: 2px solid black;
+    }
+
+    #marq h1 {
+        display: inline-block;
+        font-size: 5vw;
+        text-transform: uppercase;
+        font-weight: bolder;
+        -webkit-text-stroke: 2px black;
+        color: transparent;
+        font-family: monument;
+        margin-right: 2vw;
+        letter-spacing: 2px;
+        animation-name: move;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+        .elem:hover h6 {
+            opacity: 0;
+            left: 25%;
+        }
+}
